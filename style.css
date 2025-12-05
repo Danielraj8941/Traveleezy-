@@ -474,7 +474,7 @@ section {
 
 .about-image img {
     /* width: 100%; */
-    max-width: 1400px;
+    max-width: 1300px;
     margin: auto;
     max-width: 500px;
     border-radius: 12px;
@@ -1033,4 +1033,5 @@ section {
     }
 
 }
+
 
