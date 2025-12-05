@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="cursor-blob"></div>
+    <div class="cursor-outline"></div>
+
+    <div class="modal-bg" id="modalBg">
+        <div class="modal-box">
+            <button class="close-btn" id="closeModal">&times;</button>
+            <h2>Subscribe</h2>
+
+            <form id="subscribeForm">
+                <input type="text" id="emailInput" placeholder="Enter your gmail" />
+                <p class="error-msg" id="errorMsg"></p>
+                <button type="submit" class="sub-btn">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <div class="logo">
+                <a href="#home">Logo</a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <button class="subscribe-btn">Get in Subscribe</button>
+            </div>
+
+        </div>
+    </nav>
+
+    <section id="home" class="carousel-section">
+        <div class="carousel-container">
+            <!-- Carousel Slides -->
+            <div class="carousel-slide active">
+                <div class="carousel-content">
+                    <h1 class="carousel-title">Conquer the Heights</h1>
+                    <p class="carousel-paragraph">Experience the thrill of the mountains with breathtaking trails, fresh
+                        air, and unforgettable views. Start your adventure and discover the beauty that lies above the
+                        clouds.</p>
+                    <button class="explore-btn">Explore More</button>
+                </div>
+            </div>
+
+            <div class="carousel-slide">
+                <div class="carousel-content">
+                    <h1 class="carousel-title">Live the Beach Vibe</h1>
+                    <p class="carousel-paragraph">Dive into crystal waves, dance in the sand, and enjoy sunsets that
+                        paint the sky. Your perfect beach party escape begins where the shoreline meets joy.</p>
+                    <button class="explore-btn">Explore More</button>
+                </div>
+            </div>
+
+            <div class="carousel-slide">
+                <div class="carousel-content">
+                    <h1 class="carousel-title">Into the Wild Nature</h1>
+                    <p class="carousel-paragraph">Reconnect with nature through peaceful forests, cozy camps, and
+                        star-lit nights. Escape the city noise and embrace the calm of the wilderness.</p>
+                    <button class="explore-btn">Explore More</button>
+                </div>
+            </div>
+
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+                <span class="indicator active" data-slide="0"></span>
+                <span class="indicator" data-slide="1"></span>
+                <span class="indicator" data-slide="2"></span>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <button class="carousel-prev">&#10094;</button>
+            <button class="carousel-next">&#10095;</button>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="about-heading">
+            <h2>About Our Journey</h2>
+            <p>Your trusted tourism partner with 100+ successful trip plans</p>
+        </div>
+
+        <div class="about-container">
+            <!-- Left Column -->
+            <div class="about-image">
+                <img src="./Asset/About.jpg" alt="Tourism Image">
+            </div>
+
+            <!-- Right Column -->
+            <div class="about-content">
+                <h3>Who We Are</h3>
+                <p>
+                    We are a passionate tourism company dedicated to creating unforgettable travel
+                    experiences. Our journey began with a simple mission — to explore the world and
+                    share its beauty with our clients.
+                </p>
+                <p>
+                    Over the years, we've grown with the trust of thousands of customers, delivering
+                    100+ trip plans across popular destinations. Our expert team ensures safety,
+                    comfort, and a joyful travel experience every time.
+                </p>
+
+                <ul class="about-highlights">
+                    <li>✔ 100+ Custom Trip Plans</li>
+                    <li>✔ Trusted & Happy Clients</li>
+                    <li>✔ Best Travel Experts</li>
+                    <li>✔ Safe & Comfortable Experience</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="travel-section">
+
+        <div class="about-heading">
+            <h2>Top Tour Package</h2>
+        </div>
+        <div class="travel-grid">
+
+            <!-- Big Card -->
+            <div class="travel-card big">
+                <img src="./Asset/london.jpg" alt="">
+                <div class="card-content">
+                    <span class="location">England</span>
+                    <h2>London</h2>
+                    <span class="tours">15 Tours</span>
+                </div>
+            </div>
+
+            <!-- Small Card 1 -->
+            <div class="travel-card">
+                <img src="./Asset/italy.jpg" alt="">
+                <div class="card-content">
+                    <span class="location">Italy</span>
+                    <h2>Caspian Valley</h2>
+                    <span class="tours">18 Tours</span>
+                </div>
+            </div>
+
+            <!-- Small Card 2 -->
+            <div class="travel-card">
+                <img src="./Asset/tokyo.jpg" alt="">
+                <div class="card-content">
+                    <span class="location">Tokyo</span>
+                    <h2>Japan</h2>
+                    <span class="tours">21 Tours</span>
+                </div>
+            </div>
+
+            <!-- Small Card 3 -->
+            <div class="travel-card">
+                <img src="./Asset/mosco.jpg" alt="">
+                <div class="card-content">
+                    <span class="location">Moscow</span>
+                    <h2>Russia</h2>
+                    <span class="tours">15 Tours</span>
+                </div>
+            </div>
+
+            <!-- Small Card 4 -->
+            <div class="travel-card">
+                <img src="./Asset/florida.jpg" alt="">
+                <div class="card-content">
+                    <span class="location">Florida</span>
+                    <h2>America</h2>
+                    <span class="tours">32 Tours</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="creative-gallery">
+
+        <h2 class="gallery-title">Explore Moments</h2>
+
+        <div class="gallery-wrapper">
+
+            <div class="gallery-card large">
+                <img src="./Asset/New folder/America.jpg" alt="">
+                <div class="overlay">
+                    <p>America</p>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <img src="./Asset/New folder/Australia.jpg" alt="">
+                <div class="overlay">
+                    <p>Australia</p>
+                </div>
+            </div>
+
+            <div class="gallery-card tall">
+                <img src="./Asset/New folder/Canada.jpg" alt="">
+                <div class="overlay">
+                    <p>Canada</p>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <img src="./Asset/New folder/China.jpg" alt="">
+                <div class="overlay">
+                    <p>CHina</p>
+                </div>
+            </div>
+
+            <div class="gallery-card wide">
+                <img src="./Asset/New folder/India.jpg" alt="">
+                <div class="overlay">
+                    <p>INdia</p>
+                </div>
+            </div>
+
+            <div class="gallery-card wide">
+                <img src="./Asset/New folder/Italy.jpg" alt="">
+                <div class="overlay">
+                    <p>Italy</p>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <img src="./Asset/New folder/Japan.jpg" alt="">
+                <div class="overlay">
+                    <p>Japan</p>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <img src="./Asset/New folder/Spain.jpg" alt="">
+                <div class="overlay">
+                    <p>Spain</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <section class="contact-section">
+
+        <!-- Row 1: Heading -->
+        <div class="contact-heading">
+            <h2>Contact Us</h2>
+            <p>Have questions? We’re here to help you.</p>
+        </div>
+
+        <!-- Row 2: 3 Contact Items -->
+        <div class="contact-row">
+
+            <!-- Phone -->
+            <div class="contact-box">
+                <i class="fas fa-phone"></i>
+                <h4>Phone</h4>
+                <p>+91 9876543210</p>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-box">
+                <i class="fas fa-envelope"></i>
+                <h4>Email</h4>
+                <p>traveleezy@gmail.com</p>
+            </div>
+
+            <!-- Location -->
+            <div class="contact-box">
+                <i class="fas fa-location-dot"></i>
+                <h4>Location</h4>
+                <p>Hember Building, East Coast Street, Chennai</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- About -->
+            <div class="footer-box">
+                <h3>Traveleezy</h3>
+                <p>Your trusted travel partner helping you explore the world with comfort, safety, and unforgettable
+                    experiences.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Packages</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p><i class="fas fa-phone"></i> +91 9876543210</p>
+                <p><i class="fas fa-envelope"></i> traveleezy@gmail.com</p>
+                <p><i class="fas fa-location-dot"></i> Hember Building, East Coast Street, <br> Chennai</p>
+            </div>
+
+            <!-- Follow Us -->
+            <div class="footer-box">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-threads"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>@ 2025 Traveleezy. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
