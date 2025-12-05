@@ -294,15 +294,15 @@ section {
 }
 
 .carousel-slide:nth-child(1) {
-    background: url(./Asset/Banner/01.jpg) center/cover no-repeat;
+    background: url(./01.jpg) center/cover no-repeat;
 }
 
 .carousel-slide:nth-child(2) {
-    background: url(./Asset/Banner/02.jpg) center/cover no-repeat;
+    background: url(./02.jpg) center/cover no-repeat;
 }
 
 .carousel-slide:nth-child(3) {
-    background: url(./Asset/Banner/03.jpg) center/cover no-repeat;
+    background: url(./03.jpg) center/cover no-repeat;
 }
 
 .carousel-slide.active {
@@ -1029,4 +1029,5 @@ section {
     .carousel-content {
         padding: 1.5rem;
     }
+
 }
